@@ -1,0 +1,45 @@
+.board {
+  position: relative;
+  width: 90vmin;
+  height: 85vmin;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 4px solid #222;
+}
+
+.corner {
+  width: 100%;
+  height: 100%;
+}
+
+.corner.red {
+  grid-area: 1 / 1;
+}
+.corner.blue {
+  grid-area: 1 / 3;
+}
+.corner.yellow {
+  grid-area: 3 / 1;
+}
+.corner.green {
+  grid-area: 3 / 3;
+}
+
+.track-vertical.top {
+  grid-area: 1 / 2;
+}
+.track-horizontal.left {
+  grid-area: 2 / 1;
+}
+.track-horizontal.right {
+  grid-area: 2 / 3;
+}
+.track-vertical.bottom {
+  grid-area: 3 / 2;
+}
+
+.center-square {
+  grid-area: 2 / 2;
+}

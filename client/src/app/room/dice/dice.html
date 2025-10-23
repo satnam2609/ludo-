@@ -1,0 +1,6 @@
+<div class="dice-container" (click)="rollDice()" [class.rolling]="rolling">
+  <div class="dice" [attr.data-value]="value">
+    <span *ngFor="let dot of [].constructor(value)" class="dot"></span>
+  </div>
+  <!-- <p *ngIf="!rolling">Click to Roll</p> -->
+</div>

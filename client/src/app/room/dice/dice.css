@@ -1,0 +1,38 @@
+.dice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dice {
+  width: 80px;
+  height: 80px;
+  background: #ee0707;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  transition: transform 0.2s ease;
+  margin-bottom: 10px;
+}
+
+.dice.rolling {
+  transform: rotate(20deg);
+  animation: shake 0.5s infinite alternate;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #e7dfdf;
+  border-radius: 50%;
+}
+
+/* Simple shake animation */
+@keyframes shake {
+  from { transform: rotate(15deg); }
+  to { transform: rotate(-15deg); }
+}

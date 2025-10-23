@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: 50vmin;
+  height: 90vmin;
+  border: 1px solid #dbd6d6;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.upper-child h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+}
+
+.color{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.color.red{
+    color:red;
+    
+}

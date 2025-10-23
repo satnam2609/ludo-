@@ -1,0 +1,23 @@
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 90%;
+  height: 90%;
+}
+
+.home.red { background: #ff4d4d; }
+.home.green { background: #4dff88; }
+.home.blue { background: #4d88ff; }
+.home.yellow { background: #ffec4d; }
+
+.piece {
+  background: white;
+  border-radius: 50%;
+  border: 2px solid #222;
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
